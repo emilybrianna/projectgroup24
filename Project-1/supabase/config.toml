@@ -1,0 +1,11 @@
+[functions.send-otp-email]
+verify_jwt = false
+
+[functions.ai-stylist-chat]
+verify_jwt = false
+
+[functions.create-payment-intent]
+enabled = true
+verify_jwt = false
+import_map = "./functions/create-payment-intent/deno.json"
+entrypoint = "./functions/create-payment-intent/index.ts"
